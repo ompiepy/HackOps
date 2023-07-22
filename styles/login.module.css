@@ -1,0 +1,12 @@
+.container {
+    margin: 3rem;
+}
+
+.buttons button{
+    margin: 1rem;
+}
+
+.buttons button a{
+    text-decoration: none;
+    color: #fff;
+}

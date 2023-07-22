@@ -1,0 +1,47 @@
+.container {
+    display: grid;
+    grid-template-columns: 1.9fr 0.5fr;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+
+.topics {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    border: none;
+}
+
+.topics button {
+    border: none;
+    background: transparent;
+}
+
+.left_container {
+    margin-top: 5rem;
+}
+
+.right_container {
+    top: 0;
+}
+
+.right_container button {
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+}
+
+.right_container button a{
+    text-decoration: none;
+    
+}
+
+.active {
+    animation: blink 2s infinite; 
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }

@@ -1,0 +1,51 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+.lists {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0.5rem;
+    row-gap: 2rem;
+}
+
+.lists button {
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+
+.lists button a {
+    text-decoration: none;
+    color: black;
+}
+
+.active {
+    animation: blink 2s infinite; 
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+@media screen and (max-width: 1000px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        grid-template-columns: 1fr;
+        font-size: 0.8rem;
+    }
+}
