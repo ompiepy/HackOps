@@ -1,0 +1,134 @@
+:root {
+  --blue: #673ab7;
+  --submit: rgba(103,58,183,0.6);
+  --reset: rgba(103,58,183,0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Google Sans", Arial, Sans-Serif;
+  background-color: #f0ebf8;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+}
+
+h1 {
+  text-align: center;
+}
+
+label, input {
+  display: block;
+}
+
+#header {
+  margin: 12px auto;
+  width: 60vw;
+  height: auto;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border-top: 10px solid var(--blue);
+  padding: 5vw;
+}
+
+#survey-form {
+    margin: 12px auto;
+    width: 55vw;
+    height: auto;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border-top: 10px solid var(--blue);
+    padding: 5vw; 
+}
+
+#description {
+  margin-top: 12px;
+}
+
+.flash {
+  color: #ff0000;
+}
+
+.form-group {
+  margin: 12px auto;
+  max-width: 80vw;
+  height: auto;
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 5vw;
+}
+
+@media (min-width: 640px) {
+  .form-group {
+    width: 592px;
+    padding: 24px;
+  }
+}
+
+button a {
+  text-decoration: none;
+  color: blue;
+  font-size: 1.2rem;
+}
+
+.label {
+  margin-bottom: 16px;
+}
+
+input[type=text],
+input[type=email],
+input[type=number] {
+  width: 100%;
+  padding: 4px 0;
+  border: none;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.15);
+}
+
+.form-group input:hover,
+.form-group input:focus {
+  outline: none;
+  border-bottom: 2px solid var(--blue);
+}
+
+.form-group input:invalid {
+  outline: none;
+}
+
+button {
+  height: 35px;
+  padding: 0 24px;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-radius: 4px;
+}
+
+#submit {
+  background-color: var(--blue);
+  color: #ffffff;
+}
+
+#submit:hover {
+  background-color: var(--submit);
+}
+
+#reset {
+  color: var(--blue);
+}
+
+#reset:hover {
+  background-color: var(--reset);
+}
+
+#button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 90vw;
+  width: 640px;
+  height: auto;
+  margin: 12px auto;
+}

@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import styles from "../../styles/apply.module.css";
-import Navbar from "../../components/Navbar";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Footer from "../../components/Footer";
 
@@ -18,7 +17,9 @@ const page = () => {
   }, []);
   return (
     <>
-      <Navbar />
+    <div className={styles.wrapper}>
+
+    
       <div className={styles.container + " container"}>
         <div className={styles.left_container}>
           <h3 className={styles.topics}>
@@ -29,7 +30,11 @@ const page = () => {
           {pastHackathons.map((item) => (
             <h5 key={item.id}>{item.description}</h5>
           ))}
+          <button><a href="/">
+              Back
+            </a></button>
         </div>
+        
         <div className={styles.right_container}>
           <button>
             <a href="/registration" className={styles.active}>
@@ -42,6 +47,7 @@ const page = () => {
         </div>
       </div>
       <Footer />
+      </div>
     </>
   );
 };
