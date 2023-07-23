@@ -47,7 +47,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className={styles.copyright}>copyright &copy; 2023</div>
+      <div className={styles.copyright}>Hacks for Hackers &copy; 2023</div>
     </>
   );
 };

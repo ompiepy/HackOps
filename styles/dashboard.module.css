@@ -84,6 +84,10 @@
   margin-top: 2rem;
 }
 
+.event_lists .uppertable {
+    margin-left: 9rem;
+}
+
 .event_lists h4 {
     text-align: center;
 }
@@ -95,12 +99,16 @@
 .event_lists td,
 .event_lists th {
   border: 2px solid black;
-  padding: 8px 8rem;
-  text-align: center;
+  padding: 8px 4rem;
+}
+
+.asked_questions {
+    margin-left: 2rem;
 }
 
 .available_organizer {
-    margin-top: 2rem;
+    margin-top: 4rem;
+    margin-left: 2rem;
 }
 
 .available_organizer ul {
@@ -112,6 +120,10 @@
 .available_organizer ul li {
     margin: 0.5rem;
     
+}
+
+.mentors {
+    margin-top: 3rem;
 }
 
 .notification {
